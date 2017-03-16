@@ -5,7 +5,8 @@ date:   2017-03-14 22:47:20 +0100
 categories: software
 tags: Tally Board
 ---
-<iframe class="modal-video center-block" src="http://www.youtube.com/embed/rVFfYdkR04o" allowfullscreen></iframe>
+
+<iframe class="modal-video center-block" src="https://www.youtube.com/embed/rVFfYdkR04o" allowfullscreen></iframe>
 > A challenger to one of the most addictive apps out there, Tally Board surpasses the usual sliding block game formula with a greater focus on mental arithmetic and planning ahead.
 
  EVALUAPP
