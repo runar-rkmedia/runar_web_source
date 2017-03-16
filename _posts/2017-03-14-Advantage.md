@@ -1,4 +1,13 @@
-# The weird and productive keyboard
+---
+layout: post
+title:  "The weird and productive keyboard"
+date:   2017-03-14 22:47:20 +0100
+categories: hardware
+tags: hardware keyboard productivity tips
+---
+
+> **Please note that this post is a work-in-progress. It lacks content, images and has not been criqued or proofread.**
+
 
 For quite some time I've been using just regular flat keyboards, mostly because as a student I used my laptop a lot. When working on my desktop I wanted a similar keyboard, so I went with a flat Logitech-keyboard.
 
