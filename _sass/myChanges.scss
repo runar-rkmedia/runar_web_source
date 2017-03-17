@@ -49,9 +49,14 @@ td {
   float: none;
 }
 .trigger .page-link{
-  color: white;
+  color: #e7edf9;
   &:not(:last-child) {
     margin-right: 20px;
+  }
+  &:hover {
+    color: #e7edf9;
+    text-decoration: none;
+    border-bottom: 3px solid #d0dbf1;
   }
 }
 .site-header {
@@ -62,6 +67,7 @@ td {
 .trigger .current-page-link {
   color: #a7bce7;
   border-bottom: 3px solid #a7bce7;
+
 }
 .front-page-post-image {
   max-height: 300px;
