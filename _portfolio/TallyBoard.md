@@ -6,7 +6,9 @@ categories: software
 tags: iOS game math
 ---
 
-<iframe class="modal-video center-block" src="https://www.youtube.com/embed/rVFfYdkR04o" allowfullscreen></iframe>
+<div class="center">
+  <iframe width="600" height="300" class="modal-video center-block" src="https://www.youtube.com/embed/rVFfYdkR04o" allowfullscreen></iframe>
+</div>
 <h3>Tally Board <small> &mdash; Math-puzzler for iOS</small></h3>
 <blockquote>
   <p>A challenger to one of the most addictive apps out there, Tally Board surpasses the usual sliding block game formula with a greater focus on mental arithmetic and planning ahead.</p>
