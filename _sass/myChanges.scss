@@ -78,6 +78,7 @@ td {
 }
 .post-link {
   font-size: 28px;
+
 }
 .relative {
     position: relative;
@@ -86,4 +87,9 @@ td {
   position: absolute;
   top: 2ex;
   right: 0;
+
+  @include media-query($on-palm) {
+    position: relative;
+    top: 0;
+  }
 }
