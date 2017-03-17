@@ -4,18 +4,22 @@ layout: default
 
 <div class="home">
 
+  The website of Runar Kristoffersen
+
+  This is a work-in-progress website. Currently, it doesn't hold much, but I expect it to have to hold my portfolio and possibly a few blogposts.
+
   <h1 class="page-heading">Posts</h1>
-  
+
   {{ content }}
 
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
         <h2>
           <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
         </h2>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <p>{{ post.excerpt | markdownify }}</p>
       </li>
     {% endfor %}
   </ul>

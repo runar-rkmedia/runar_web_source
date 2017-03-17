@@ -8,6 +8,7 @@ tags: hardware keyboard productivity tips
 
 This section is highly inspired [A Modern Space Cadet](http://stevelosh.com/blog/2012/10/a-modern-space-cadet/) by Steve Losh, which is a good read if you are interested in a more useful keyboard. The software described in his post is however not usable in macOS sierra, but there is a new project called [Karabiner-Elements](https://github.com/tekezo/Karabiner-Elements) which works really well.
 
+{:.float-right}
 ![XKCD: Borrow Your Laptop](https://imgs.xkcd.com/comics/borrow_your_laptop.png)
 
 ## Control-key

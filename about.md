@@ -2,6 +2,7 @@
 layout: page
 title: About
 permalink: /about/
+navigation_weight: 99
 ---
 
 I am a up-and-coming developer from Norway. Professionally, I am an electrician. By desire, I am a computer- and sciencegeek.
