@@ -5,7 +5,7 @@ date:   2017-03-14 22:47:20 +0100
 categories: hardware
 tags: hardware keyboard productivity tips
 image: "images/advantage2-front-page.jpg"
-image_description: "Kinesis Advantage"
+image_description: "Kinesis Advantage2"
 ---
 
 For quite some time I've been using just regular flat keyboards, mostly because as a student I used my laptop a lot. When working on my desktop I wanted a similar keyboard, so I went with a flat Logitech-keyboard.
@@ -22,6 +22,8 @@ I was happy for a while, but after spending hours coding, I noticed some beginni
 
 After poking around the internet, I found a weird looking keyboard made by a company called Kinesis. The Advantage 2. A huge, split keyboard with contoured wells for my hands, with modifier keys for both my thumbs. In all these years I found it strange that the strongest finger (albeit not technically a finger) would be assigned only to hitting the spacebar. This was a strange new world. This was too much of an adjustment.
 
+{:.center}
+[![Kinesis Advantage2](/images/advantage2-800.jpg)](/images/advantage2.jpg)
 
 
 

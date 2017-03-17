@@ -16,7 +16,11 @@ module.exports = function(grunt) {
                     sizes: [{
                       name: 'front-page',
                         height: 300,
-                        quality: 80,
+                        quality: 60,
+                    },{
+                      name: '800',
+                        width: 800,
+                        quality: 60,
                     }]
                 },
                 files: [{
@@ -46,12 +50,20 @@ module.exports = function(grunt) {
 
         /* Copy the "fixed" images that don't go through processing into the images/directory */
         copy: {
+            fixed: {
+                files: [{
+                    expand: true,
+                    src: 'images_src/fixed/*.{gif,jpg,png,svg}',
+                    flatten: true,
+                    dest: 'images/fixed'
+                }]
+            },
             dev: {
                 files: [{
                     expand: true,
-                    src: 'images_src/fixed/*.{gif,jpg,png}',
+                    src: 'images_src/*.{gif,jpg,png}',
                     flatten: true,
-                    dest: 'images/fixed'
+                    dest: 'images/'
                 }]
             },
         },
