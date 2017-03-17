@@ -26,6 +26,9 @@ layout: default
         {% endif %}
         <p>{{ post.excerpt | markdownify }}</p>
       </li>
+      <li class="center">
+        <a class="post-read-more" href="{{ post.url | relative_url }}">[ Read More ]</a>
+      </li>
       <hr>
     {% endfor %}
   </ul>
