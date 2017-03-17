@@ -1,3 +1,7 @@
+h1,h2,h3,h4,h5,h5{
+  font-family: 'Josefin Slab', serif;
+}
+
 table
 {
 margin-left: auto;
@@ -73,5 +77,13 @@ td {
   max-height: 300px;
 }
 .post-link {
-  position: relative;
+  font-size: 28px;
+}
+.relative {
+    position: relative;
+}
+.post-meta {
+  position: absolute;
+  top: 2ex;
+  right: 0;
 }

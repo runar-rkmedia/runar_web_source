@@ -6,8 +6,6 @@ categories: hardware
 tags: hardware keyboard productivity tips
 ---
 
-## The base idea
-
 Remapping the keyboard is highly useful, especially if you find that there currently is not enough keys on your keyboard. Instead of slaving though remembering cumbersome key-combinations to get your work done, why not add some extra keys on your keyboard? Of course, we are not physically adding keys, but using the ones we have a bit smarter.
 
 Like on your touch phone or pad, you can tap, hold, swipe as you navigate through the interface. Yet, you are only interacting with a single surface.
