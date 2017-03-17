@@ -4,7 +4,7 @@ title:  "The weird and productive keyboard"
 date:   2017-03-14 22:47:20 +0100
 categories: hardware
 tags: hardware keyboard productivity tips
-image: "images/advantage2.jpg"
+image: "images/advantage2-front-page.jpg"
 image_description: "Kinesis Advantage"
 ---
 
@@ -21,6 +21,7 @@ I was happy for a while, but after spending hours coding, I noticed some beginni
 ## Advantage
 
 After poking around the internet, I found a weird looking keyboard made by a company called Kinesis. The Advantage 2. A huge, split keyboard with contoured wells for my hands, with modifier keys for both my thumbs. In all these years I found it strange that the strongest finger (albeit not technically a finger) would be assigned only to hitting the spacebar. This was a strange new world. This was too much of an adjustment.
+
 
 
 
