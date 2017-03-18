@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Keyboard remapping gone mad"
-date:   2017-03-15 22:47:20 +0100
+date:   2017-03-16 22:47:20 +0100
 categories: hardware
 tags: hardware keyboard productivity tips
 ---
