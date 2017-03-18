@@ -1,0 +1,13 @@
+{% assign image_name=include.image | split:"." %}
+{% capture srcset %}
+    {% for i in site.resized %}
+        /images/{{ image_name[0] }}-{{ i }}.{{ image_name[1] }} {{ i }}w,
+    {% endfor %}
+{% endcapture %}
+{{srcset | strip_newlines | strip}}
+{{site.resized }}
+
+{% assign default_size = 800 %}
+{% assign largest = site.resized | sort | last %}
+
+<img src="/images/{{ image_name[0] }}-{{ default_size }}.{{ image_name[1] }}" alt="{{ include.alt }}" srcset="{{ srcset | strip_newlines }}" sizes="(min-width: 800px) 80vw, 100vw" class="{{ include.class }}">
