@@ -87,7 +87,7 @@ iframe {
 .relative {
     position: relative;
 }
-.post-meta {
+.pull-right {
   position: absolute;
   top: 2ex;
   right: 0;
@@ -96,4 +96,10 @@ iframe {
     position: relative;
     top: 0;
   }
+}
+.col-8{
+  width: 66.67%;
+}
+.col-9{
+  width: 75%;
 }
