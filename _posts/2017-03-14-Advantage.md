@@ -65,5 +65,4 @@ I don't use my mouse as much, and I am a lot quicker than I was before. Because 
 ## Beyond
 Some modifications are needed. I would like a `ctrl`-key on the left, as well as a `alt`-key on the right. I can see that there really isn't room to add them, without needing to stretch my fingers a lot. Therefore, it is not as easy as just remapping the keys. I'll have to do something a bit more clever. I'll dive into this in my next post, as well as how to remap keys, not just for this keyboard, but for any keyboard.
 
-
-You can find the post here: {% post_link 2017-03-16-Key-modifications %}
+You can find the post here: [Keyboard remapping gone mad]({% post_url 2017-03-16-Key-modifications %})
