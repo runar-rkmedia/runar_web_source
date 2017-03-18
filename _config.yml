@@ -29,6 +29,7 @@ resized:
  - 800
  - 400
  - 300
+ - 100
 
 # Build settings
 markdown: kramdown
