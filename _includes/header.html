@@ -1,30 +1,32 @@
+<!DOCTYPE html>
 <header class="site-header" role="banner">
 
-  <div class="header-wrapper">
+    <div class="header-wrapper">
 
-<div class="wrapper">
-  <a class="site-title" href="{{ "/" | relative_url}}">
-    <!-- {{ site.title | escape }} -->
-    <img class="logo" src="{{ "images/fixed/RK-wide.svg" | relative_url}}" alt="">
-  </a>
-</div>
-
-
-        <div class="trigger">
-<div class="wrapper">
-  {% assign navigation_pages = site.pages | sort: 'navigation_weight'   %}
-  {% for my_page in navigation_pages %}
-    {% if my_page.title %}
-    {% assign current = nil %}
-      {% if page.url == my_page.url%}
-        {% assign current = 'current-page-link' %}
-      {% endif %}
-    <a class="page-link {{current}}" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-    {% endif %}
-  {% endfor %}</div>
+        <div class="wrapper">
+            <a class="site-title logo" href="/">
+                <!-- {{ site.title | escape }} -->
+                <img class="logo" src="/images/fixed/RK-wide.svg" alt="Logo">
+            </a>
         </div>
-      </nav>
 
-  </div>
+        <nav>
+            <div class="trigger">
+                <div class="wrapper">
+                    {% assign navigation_pages = site.pages | sort : 'navigation_weight' %}
+                    {% for my_page in navigation_pages %}
+                        {% if my_page.title %}
+                            {% assign current = nil %}
+                            {% if page.url == my_page.url%}
+                                {% assign current = 'current-page-link' %}
+                            {% endif %}
+                            <a class="page-link {{current}}" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </nav>
+
+    </div>
 
 </header>

@@ -7,5 +7,9 @@
 
 {% assign default_size = 800 %}
 {% assign largest = site.resized | sort | last %}
-
-<img src="/images/{{ image_name[0] }}-{{ default_size }}.{{ image_name[1] }}" alt="{{ include.alt }}" srcset="{{ srcset | strip_newlines }}" sizes="(min-width: 800px) 80vw, 100vw" class="{{ include.class }}">
+{% if include.sizes%}
+  {% assign sizes=include.sizes%}
+{% else %}
+  {% assign sizes="(min-width: 800px) 80vw, 100vw" %}
+{% endif %}
+<img src="/images/{{ image_name[0] }}-{{ default_size }}.{{ image_name[1] }}" alt="{{ include.alt }}" srcset="{{ srcset | strip_newlines }}" sizes="{{ sizes }}" class="{{ include.class }}">

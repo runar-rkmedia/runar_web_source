@@ -21,8 +21,7 @@ layout: default
         <div class="post-meta pull-right">{{ post.date | date: "%b %-d, %Y" }}</div>
         {% if post.image %}
           <div class="center">
-            <img class="front-page-post-image"src="{{post.image}}" alt="{{post.image_description}}">
-          </div>
+            {% include image.html alt=post.image_description image=post.image  sizes="(min-width: 800px) 50vw, 100vw"%}</div>
         {% endif %}
         <p>{{ post.excerpt | markdownify }}</p>
       </li>
