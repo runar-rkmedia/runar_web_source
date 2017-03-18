@@ -4,8 +4,6 @@
         /images/{{ image_name[0] }}-{{ i }}.{{ image_name[1] }} {{ i }}w,
     {% endfor %}
 {% endcapture %}
-{{srcset | strip_newlines | strip}}
-{{site.resized }}
 
 {% assign default_size = 800 %}
 {% assign largest = site.resized | sort | last %}
