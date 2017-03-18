@@ -1,9 +1,12 @@
 ---
 title:  "Tally Board"
 sub-title: "Math-puzzler for iOS"
+short-description: "Tally Board was developed as a project to learn development for mobile devices. The app got very good reviews both online and in the App-Store, avareging about 4.3 out of 5."
 date:   2017-03-14 22:47:20 +0100
 categories: software
 tags: iOS game math
+image: "TallyBoardIcon.jpg"
+image_description: "TallyBoard logo"
 ---
 
 <div class="center">

@@ -4,9 +4,21 @@ title: "Portfolio"
 navigation_weight: 2
 ---
 
-{% for project in site.portfolio %}
-  <div class="project">
-    <h2>{{ project.title }}</h2>
-    {{ project.content }}
-  </div>
-{% endfor %}
+<div class="row projects">
+    {% for project in site.portfolio %}
+        {% if project.image %}
+            <div class="project">
+
+                <div class="project-pic"><a href="{{project.url}}">{% include image.html class="project-image" alt=project.image_description image=project.image  sizes="(min-width: 800px) 400px, 35vw"%}</a></div>
+                <div class="project-text">
+                    <a href="{{project.url}}">
+                        <h2 class="project-title">{{project.title}}</h2>
+                    </a>
+                    <div class="project-subtitle">{{project.sub-title}}</div>
+                    <div class="project-description">{{project.short-description}}</div>
+                </div>
+            </div>
+            <div class="gap"></div>
+        {% endif %}
+    {% endfor %}
+</div>
