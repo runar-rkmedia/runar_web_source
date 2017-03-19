@@ -8,7 +8,7 @@ navigation_weight: 99
 I am a up-and-coming developer from Norway. Professionally, I am an electrician. By desire, I am a computer- and sciencegeek.
 
 
-{% include image.html alt="Runar Kristoffersen Profile Picture" image="Runar.jpg" sizes="50" class="float-left img-circle"%}
+<div class="center">{% include image.html alt="Runar Kristoffersen Profile Picture" image="Runar.jpg" sizes="50vw" class="float-left img-circle"%}</div>
 
 Currently I am working my way though the [Full Stack Web Developer](https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004), which is a Nanodegree hosted by Udacity, co-created by Amazon, GitHub, At&T and Google.
 

@@ -89,6 +89,10 @@ iframe {
     float: right;
     padding-left: 20px;
 }
+.float-left {
+    float: left;
+    margin-right: 20px;
+}
 
 .float-left,
 float-right {
@@ -97,13 +101,11 @@ float-right {
     max-width: 300px;
     @include media-query($on-palm) {
         float: none;
+        margin: 0 auto;
     }
 }
 
-.float-left {
-    float: left;
-    margin-right: 20px;
-}
+
 
 .img-circle {
     padding: 0;
