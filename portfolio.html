@@ -9,7 +9,7 @@ navigation_weight: 2
         {% if project.image %}
             <div class="project">
 
-                <div class="project-pic"><a href="{{project.url}}">{% include image.html class="project-image" alt=project.image_description image=project.image  sizes="(min-width: 800px) 400px, 25vw"%}</a></div>
+                <div class="project-pic"><a href="{{project.url}}">{% include image.html class="project-image" alt=project.image_description image=project.image  sizes="(min-width: 800px) 400px, 25vw" a='None'%}</a></div>
                 <div class="project-text">
                     <a href="{{project.url}}">
                         <h2 class="project-title">{{project.title}}</h2>
