@@ -42,6 +42,53 @@ module.exports = function(grunt) {
                     dest: 'images/'
                 }]
             },
+            icons: {
+                options: {
+                    engine: 'im',
+                    sizes: [{
+                        name: '100',
+                        height: 100,
+                        width: 100,
+                        quality: 60,
+                        aspectRatio: false,
+                        gravity: 'NorthWest'
+                    }, {
+                        name: '300',
+                        height: 300,
+                        width: 300,
+                        quality: 60,
+                        aspectRatio: false,
+                        gravity: 'NorthWest'
+                    }, {
+                        name: '400',
+                        height: 400,
+                        width: 400,
+                        quality: 60,
+                        aspectRatio: false,
+                        gravity: 'NorthWest'
+                    }, {
+                        name: '800',
+                        height: 800,
+                        width: 800,
+                        quality: 60,
+                        aspectRatio: false,
+                        gravity: 'NorthWest'
+                    }, {
+                        name: '1600',
+                        height: 1600,
+                        width: 1600,
+                        quality: 80,
+                        aspectRatio: false,
+                        gravity: 'NorthWest'
+                    }]
+                },
+                files: [{
+                    expand: true,
+                    src: ['*.{gif,jpg,png}'],
+                    cwd: 'images_src/icons/',
+                    dest: 'images/'
+                }]
+            },
         },
 
         /* Clear out the images directory if it exists */
@@ -74,6 +121,14 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     src: 'images_src/*.{gif,jpg,png}',
+                    flatten: true,
+                    dest: 'images/'
+                }]
+            },
+            icons: {
+                files: [{
+                    expand: true,
+                    src: 'images_src/icons/*.{gif,jpg,png}',
                     flatten: true,
                     dest: 'images/'
                 }]
