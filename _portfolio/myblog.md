@@ -11,8 +11,10 @@ image_description: "Blog screenshot"
 
 
 <h3>Blog <small> &mdash; Creating a secure multi-user-blog</small></h3>
-  <p>This is part of an assignment in the Full-Stack-course at Udacity. The goal is to create a multi-user-blog, deployed using Google App Engine.</p>
-  <p>The project can be seen at [Causal-destiny-157016.appspot.com](http://causal-destiny-157016.appspot.com) and the code at <a href="https://github.com/runartrollet/my_blog">my_blog github repo</a></p>
+
+This is part of an assignment in the Full-Stack-course at Udacity. The goal is to create a multi-user-blog, deployed using Google App Engine.
+
+The project can be seen at [Causal-destiny-157016.appspot.com](http://causal-destiny-157016.appspot.com) and the code at [my_blog github repo](https://github.com/runartrollet/my_blog)
 
 <div class="center">{% include image.html alt="Blog screenshot" image="my_blog.png"  class="center col-6" sizes="(min-width: 800px) 50vw, 100vw"%}</div>
 
