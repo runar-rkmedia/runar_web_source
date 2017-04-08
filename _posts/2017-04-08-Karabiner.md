@@ -14,6 +14,7 @@ This is my third post in the series concerning keyboards and increasing the prod
 - [The weird and productive keyboard]({% post_url 2017-03-14-Advantage %}), my recommended keyboard for anybody wanting to increase their productivity, comfort level, or simply how to write the correct way.
 - [Keyboard remapping gone mad]({% post_url 2017-03-16-Key-modifications %}), a post going through some ideas for how the keyboard can be remapped to get more functionality while at the same time avoiding painful key-combinations.
 
+Below is a recap-video from the last post, of some of the features of this remap:
 
 <figure>
   <video width="960" controls>
