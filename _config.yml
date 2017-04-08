@@ -23,6 +23,7 @@ url: "http://www.runarkristoffersen.com" # the base hostname & protocol for your
 url_site: "http://www.runarkristoffersen.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: runartrollet
 github_username:  runartrollet
+google_analytics: 'UA-97043586-1'
 
 # Image-sizes
 resized:
