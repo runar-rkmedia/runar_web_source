@@ -25,3 +25,34 @@ layout: default
     {% include disqus_comments.html %}
   {% endif %}
 </article>
+<hr>
+Share this post:
+<div class="social-icons share-buttons">
+  <!-- Basic Share Links -->
+  {% capture url %}{{site.url_site}}{{page.url}}{% endcapture %}
+  {% assign title=page.title|url_encode %}
+  {% assign desc=page.excerpt|url_encode %}
+  <!-- Twitter (url, text, @mention) -->
+  <a class="fa fa-twitter-square" href="http://twitter.com/share?url={{url}}&text={{title}}&via={{site.twitter_username}}">
+  </a>
+
+  <!-- Google Plus (url) -->
+  <a class="fa fa-google-plus-square" href="https://plus.google.com/share?url={{url}}">
+  </a>
+
+  <!-- Facebook (url) -->
+  <a class="fa fa-facebook-square" href="http://www.facebook.com/sharer/sharer.php?u={{url}}">
+  </a>
+
+  <!-- StumbleUpon (url, title) -->
+  <a class="fa fa-steam-square" href="http://www.stumbleupon.com/submit?url={{url}}&title={{title}}">
+  </a>
+
+  <!-- Reddit (url, title) -->
+  <a class="fa fa-reddit-square" href="http://reddit.com/submit?url={{url}}&title={{title}}">
+  </a>
+
+  <!-- LinkedIn (url, title, summary, source url) -->
+  <a class="fa fa-linkedin-square"  href="http://www.linkedin.com/shareArticle?url={{url}}&title={{title}}&summary={{desc}}&source={{ site.url_site }}">
+  </a>
+</div>

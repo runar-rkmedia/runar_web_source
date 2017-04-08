@@ -77,8 +77,8 @@ td {
     padding-left: 5px;
 }
 
-video{
-  max-width: 100%;
+video {
+    max-width: 100%;
 }
 
 .center {
@@ -93,6 +93,7 @@ iframe {
     float: right;
     padding-left: 20px;
 }
+
 .float-left {
     float: left;
     margin-right: 20px;
@@ -108,8 +109,6 @@ float-right {
         margin: 0 auto;
     }
 }
-
-
 
 .img-circle {
     padding: 0;
@@ -179,18 +178,19 @@ float-right {
 
 .projects {
     display: -webkit-box;
-    display: -ms-flexbox;
-    /* display: flex;*/ /* Safari 6.1+ */
-    -ms-flex-wrap:wrap;
-    flex-wrap:wrap;
+    display: -ms-flexbox; /* display: flex;*/
+    /* Safari 6.1+ */
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
 }
-.gap{
-&:not(:last-child) {
-    min-width:20px
-}
+
+.gap {
+    &:not(:last-child) {
+        min-width: 20px;
+    }
 }
 
 .project {
@@ -255,15 +255,57 @@ float-right {
         font-size: $small-font-size;
     }
 }
+
 ul.tags {
-  display: inline;
+    display: inline;
 }
-ul.tags>li {
-  display: inline;
-  &:not(:last-child):after {
-    content: ',';
-  }
+
+ul.tags > li {
+    display: inline;
+
+    &:not(:last-child):after {
+        content: ',';
+    }
 }
-ul.tags>li>a {
-  color: $grey-color;
+
+ul.tags > li > a {
+    color: $grey-color;
+}
+
+.share-buttons {
+    // display: flex;
+    justify-content: space-between;
+}
+
+.share-buttons > a {
+    font-size: 1.8rem;
+    font-size: calc(1.2vw + 1.8rem);
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+
+.social-icons .fa-facebook,
+.social-icons .fa-facebook-square {
+    color: #3C599F;
+}
+
+.social-icons .fa-github,
+.social-icons .fa-github-alt,
+.social-icons .fa-github-square {
+    color: #070709;
+}
+
+.social-icons .fa-google-plus-square {
+    color: #CF3D2E;
+}
+
+.social-icons .fa-linkedin,
+.social-icons .fa-linkedin-square {
+    color: #0085AE;
+}
+
+.social-icons .fa-twitter,
+.social-icons .fa-twitter-square {
+    color: #32CCFE;
 }

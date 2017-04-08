@@ -8,6 +8,12 @@ layout: default
 
   This is a work-in-progress website. Currently, it doesn't hold much, but I expect it to hold my portfolio and possibly a few blogposts.
 
+  <!-- Get the tag name for every tag on the site and set them
+  to the `site_tags` variable. -->
+  {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+
+  <!-- `tag_words` is a sorted array of the tag names. -->
+  {% assign tag_words = site_tags | split:',' | sort %}
   <h1 class="page-heading">Posts</h1>
 
   {{ content }}
