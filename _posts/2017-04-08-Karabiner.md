@@ -2,11 +2,11 @@
 layout: post
 title:  "Key-configuration"
 date:   2017-04-08 11:47:20 +0100
-categories: hardware
-series: keyboard
-tags: hardware keyboard productivity tips
+categories: software
+tags: productivity tips
 image: "Karabiner.png"
 image_description: "Karabiner"
+excerpt: "In this post, I will dive into the technical aspect of how to remap the keyboard. Many software lets you do this, but most will not do this at a low enough level to actually remap the keys. Some just try it's best to cancel out the effect of the key you want it to remap, and then emulating the target key."
 ---
 
 This is my third post in the series concerning keyboards and increasing the productivity with them. If you haven't read the others yet, here are some links to them:
@@ -14,13 +14,16 @@ This is my third post in the series concerning keyboards and increasing the prod
 - [The weird and productive keyboard]({% post_url 2017-03-14-Advantage %}), my recommended keyboard for anybody wanting to increase their productivity, comfort level, or simply how to write the correct way.
 - [Keyboard remapping gone mad]({% post_url 2017-03-16-Key-modifications %}), a post going through some ideas for how the keyboard can be remapped to get more functionality while at the same time avoiding painful key-combinations.
 
-## Video showcasing some of the remappings
 
-<video width="960" controls>
-  <source src="/media/karabiner.mp4" type="video/mp4">
-  <source src="/media/karabiner.webm" type="video/mp4">
-Your browser does not support the video tag.
-</video>
+<figure>
+  <video width="960" controls>
+    <source src="/media/karabiner.mp4" type="video/mp4">
+    <source src="/media/karabiner.webm" type="video/mp4">
+  Your browser does not support the video tag.
+  </video>
+  <figurecaption>Video showcasing some of the remappings.
+  </figurecaption>
+</figure>
 
 In this post, I will dive into the technical aspect of how to remap the keyboard. Many software lets you do this, but most will not do this at a low enough level to actually remap the keys. Some just try it's best to cancel out the effect of the key you want it to remap, and then emulating the target key.
 

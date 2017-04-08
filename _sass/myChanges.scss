@@ -284,11 +284,15 @@ ul.tags > li > a {
 }
 
 .share-buttons > a {
+  text-decoration: none;
     font-size: 1.8rem;
     font-size: calc(1.2vw + 1.8rem);
 
     &:not(:last-child) {
         margin-right: 10px;
+    }
+    &:hover {
+      color: $grey-color;
     }
 }
 
@@ -305,6 +309,12 @@ ul.tags > li > a {
 
 .social-icons .fa-google-plus-square {
     color: #CF3D2E;
+}
+.social-icons .fa-stumbleupon-circle {
+    color: #f74425;
+}
+.social-icons .fa-reddit-square {
+    color: #FF5700;
 }
 
 .social-icons .fa-linkedin,

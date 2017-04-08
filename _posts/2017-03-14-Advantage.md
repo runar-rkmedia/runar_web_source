@@ -61,7 +61,7 @@ I don't use my mouse as much, and I am a lot quicker than I was before. Because 
 
 <figure>
 {% include image.html alt="Image of Logitech-keyboard in use" image='hands_on_Logi.jpg' sizes="(min-width: 800px) 50vw"%}
-{% include image.html alt="Image of Advantage2 in use" image='hands_on_Advantage2.jpg' sizes="(min-width: 800px) 50vw" %}
+{% include image.html alt="Image of Advantage2 in use" image='hands_on_advantage2.jpg' sizes="(min-width: 800px) 50vw" %}
   <figcaption>Comparison of usergript on the Advantage2 vs a generic keyboard. <br>Notice the much wider grip, matching my shoulder-width.</figcaption></figure>
 ## Beyond
 Some modifications are needed. I would like a `ctrl`-key on the left, as well as a `alt`-key on the right. I can see that there really isn't room to add them, without needing to stretch my fingers a lot. Therefore, it is not as easy as just remapping the keys. I'll have to do something a bit more clever. I'll dive into this in my next post, as well as how to remap keys, not just for this keyboard, but for any keyboard.
