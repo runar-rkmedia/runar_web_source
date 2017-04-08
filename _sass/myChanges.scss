@@ -255,3 +255,15 @@ float-right {
         font-size: $small-font-size;
     }
 }
+ul.tags {
+  display: inline;
+}
+ul.tags>li {
+  display: inline;
+  &:not(:last-child):after {
+    content: ',';
+  }
+}
+ul.tags>li>a {
+  color: $grey-color;
+}
