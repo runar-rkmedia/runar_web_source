@@ -15,7 +15,7 @@
                 <div class="wrapper">
                     {% assign navigation_pages = site.pages | sort : 'navigation_weight' %}
                     {% for my_page in navigation_pages %}
-                        {% if my_page.title %}
+                        {% if my_page.menu == 'main' and my_page.title %}
                             {% assign current = nil %}
                             {% if page.url == my_page.url%}
                                 {% assign current = 'current-page-link' %}
