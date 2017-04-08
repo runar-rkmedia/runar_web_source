@@ -26,8 +26,8 @@ layout: default
         </h2>
         <div class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</div>
         {% if post.image %}
-          <div class="center">
-            {% include image.html alt=post.image_description image=post.image  sizes="(min-width: 800px) 50vw, 100vw" a='None'%}</div>
+          <div class="center front-image">
+            {% include image.html alt=post.image_description image=post.image  sizes="(min-width: 800px) 40vw, 70vw" a='None'%}</div>
         {% endif %}
         <p>{{ post.excerpt | markdownify }}</p>
       </li>
