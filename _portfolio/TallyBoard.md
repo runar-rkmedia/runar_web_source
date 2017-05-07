@@ -7,6 +7,7 @@ categories: software
 tags: iOS game math
 image: "TallyBoardIcon.jpg"
 image_description: "TallyBoard logo"
+order: 10
 ---
 
 <div class="center">

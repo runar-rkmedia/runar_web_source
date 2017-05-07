@@ -7,7 +7,8 @@ navigation_weight: 2
 ---
 
 <div class="row projects">
-    {% for project in site.portfolio %}
+    {% assign sorted_projects = (site.portfolio | sort: 'order')  %}
+    {% for project in sorted_projects %}
         {% if project.image %}
             <div class="project">
 

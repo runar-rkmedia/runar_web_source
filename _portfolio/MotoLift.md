@@ -6,6 +6,7 @@ categories: mechanical
 tags: iOS game math
 image: "MotoLift.jpg"
 image_description: "MotoLift logo"
+order: 20
 ---
 
 <div class="center">
