@@ -43,3 +43,4 @@ node_modules
 
 # End of https://www.gitignore.io/api/jekyll,macos
 CNAME
+images/
