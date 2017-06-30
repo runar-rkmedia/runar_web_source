@@ -2,7 +2,6 @@
 layout: post
 title:  "Key-configuration"
 date:   2017-04-08 11:47:20 +0100
-last-modified:   2017-06-30 20:47:20 +0100
 categories: software
 tags: productivity tips
 image: "Karabiner.png"

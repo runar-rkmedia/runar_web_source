@@ -24,7 +24,7 @@ layout: default
         <h2>
           <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
         </h2>
-        <div class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</div>
+        <div class="post-meta">{{ post.last_modified_at | date: "%b %-d, %Y" }}</div>
         {% if post.image %}
           <div class="center front-image">
             {% include image.html alt=post.image_description image=post.image  sizes="(min-width: 800px) 40vw, 70vw" a='None'%}</div>
