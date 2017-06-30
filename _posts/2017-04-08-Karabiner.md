@@ -2,6 +2,7 @@
 layout: post
 title:  "Key-configuration"
 date:   2017-04-08 11:47:20 +0100
+last-modified:   2017-06-30 20:47:20 +0100
 categories: software
 tags: productivity tips
 image: "Karabiner.png"
@@ -36,6 +37,8 @@ Karabiner has a history of doing this remapping at the level we need to do our r
 
 What makes Karabiner extra useful, is that you can not only configure it through a graphical user interface, but also by just editing a `.json`-file. This is great for those who are used to editing text files, as most developers and programmers are.
 
+It is no also possible to share and import complex key-modification-rules, which is a very handy and welcome feature.
+
 ### macOS Sierra
 
 macOS Sierra brought some changes to the generic keyboard and mouse drivers, and this broke earlier versions of Karabiner. Luckily, the developers are currently rewriting Karabiner, which is now called Karabiner Elements, to work with the updated OS.
@@ -47,38 +50,26 @@ New features are added quite often, and it is very stable. I have not had a sing
 > I will keep this page updated as progress continues so that the correct information is always available here.
 
 
-## Downloading from the correct fork
+## Downloading Karabiner-Elements
 
-The community is also constantly working on it, bringing in their favourite features. One of the features we will be needing has not yet been merged into the main repository, but I suspect it will very soon. This feature is the 'Standalone keys', which we need to create a `hyper`-key, or another modifier key.
-
-The version we need is [wwwjfy-s latest release](https://github.com/wwwjfy/Karabiner-Elements/releases)
-
-Before we continue, download the latest release(0.92) as of writing, and install it.
+You can download the application from [Karabiner-Elements GitHub-Page](https://github.com/tekezo/Karabiner-Elements/).
 
 ## Configuring Karabiner-Elements
 
 Looking back at my previous post about what remapping I wrote that there were a few different kinds of remappings I found the most helpful, and my recommended setup.
 
-Not all features have made it into the GUI yet, so configuring everything requires that we jump into the `.json`-file. But don't worry, the configuration is easy.
-
-You can find the file in `~/.config/karabiner/karabiner.json`. Open the file in your favourite editor. For a look at my complete config-file, scroll down to the bottom of this post.
+Karabiner-Elements has made the process of sharing and importing comples key-modifications really easy. The rules can now be created and stored in simple `.json`-files, and imported via a regular internet-browser. A collection of rules is available from the developer's site, and also inside the application itself.
 
 ### Hyper-key
 
 To remap the `caps-lock` into another working modifier-key, which often is called the `hyper`-key, we need to add just a few lines into the config. But as I mentioned, macOS does not have a `hyper`-key, so we emulate on with a combination of all modifier keys. That would be `ctrl + shift + option + cmd`, a crazy key-combination. I highly doubt you actually are using that, and if you are, please stop it before the pain sets in.
 
-So, to redefine `caps_lock` into `hyper`, we add this to the config:
+In the latest release, 0.91.5 as of writing, this configuration is included, and you can simply import it from the _Complex Modifications_-tab.
 
-```json
-"one_to_many_mappings": {
-    "caps_lock": [
-        "left_control",
-        "left_shift",
-        "left_option",
-        "left_command"
-    ]
-},
-```
+- Press _Add Rule_
+- Press _Import more rules from the internet_
+
+A list of rules should follow. One of them should be named _Change caps_lock key_. Simply press _Import_, and select the rules you would like to enable from that import. If you ever change your mind, just disable the rule.
 
 ## Tapping modifier-key for F-key
 
@@ -86,95 +77,23 @@ Tapping a key is different that holding it. Modifier keys are by default only us
 
 The target-keys you need here should be unused keys. My keyboard does not have F-keys beyond F13, so that means I can use these keys are a target. You can, of course, configure this to any key, but really, it should be a key that is not used at all.
 
-```json
-"standalone_keys": {
-    "left_shift": "f12",
-    "left_command": "f13",
-    "left_option": "f14",
-    "right_control": "f15",
-    "right_command": "f16",
-    "right_shift": "f17",
-    "caps_lock": "f18"
-}
-```
+I have created a pull-request to get this configuration into the main server, so you can add them from there. In the meantime, you can import it directly from my site. Just follow link below and allow it to import into Karabiner.
+
+{% assign mod_json = site.url  | append: "/media/modifiers_to_f-keys.json" %}
+
+<!-- <a href="karabiner://karabiner/assets/complex_modifications/import?url={{ mod_json | escape  }}">import-file for Karabiner-Elements</a> -->
+
+(Link will be available soon.)
 
 ## Extra ctrl and option keys
 
 Since I want extra modifier keys, available on both sides of my keyboard, I did the same technique as for tapping modifier keys but applied it to a regular key.
 
-Tapping `§` now behaves as normal, but holding it will now be `ctrl`. I also set `]` to `option`.
+You can do this on the _Simple Modifications_-tab inside the Karabiner-Elements-GUI, from the simple drop-down-menu. Or, if you are are more comfortable with pure text, in your `json`, add these elements.
 
 ```json
 "simple_modifications": {
-    "close_bracket": "right_alt",
+    "close_bracket": "right_option",
     "grave_accent_and_tilde": "left_control"
-},
-"standalone_keys": {
-    "close_bracket": "close_bracket",
-    "grave_accent_and_tilde": "grave_accent_and_tilde",
-}
-```
-
-
-## The full config
-
-This is my whole config-file for Karabiner-Elements. It holds a few more values than what was mentioned above, but I am sure you can figure those out easily.
-
-```json
-{
-    "global": {
-        "check_for_updates_on_startup": true,
-        "show_in_menu_bar": true,
-        "show_profile_name_in_menu_bar": false
-    },
-    "profiles": [
-        {
-            "devices": [],
-            "fn_function_keys": {
-                "f1": "display_brightness_decrement",
-                "f10": "mute",
-                "f11": "volume_decrement",
-                "f12": "volume_increment",
-                "f2": "display_brightness_increment",
-                "f3": "mission_control",
-                "f4": "launchpad",
-                "f5": "illumination_decrement",
-                "f6": "illumination_increment",
-                "f7": "rewind",
-                "f8": "play_or_pause",
-                "f9": "fastforward"
-            },
-            "name": "Default profile",
-            "one_to_many_mappings": {
-                "scroll_lock": [
-                    "left_control",
-                    "left_shift",
-                    "left_option",
-                    "left_command"
-                ]
-            },
-            "selected": true,
-            "simple_modifications": {
-                "close_bracket": "right_alt",
-                "grave_accent_and_tilde": "left_control"
-            },
-            "standalone_keys": {
-                "close_bracket": "close_bracket",
-                "grave_accent_and_tilde": "grave_accent_and_tilde",
-                "left_shift": "f12",
-                "left_command": "f13",
-                "left_option": "f14",
-                "right_control": "f15",
-                "right_command": "f16",
-                "right_shift": "f17",
-                "scroll_lock": "f18"
-            },
-            "virtual_hid_keyboard": {
-                "caps_lock_delay_milliseconds": 0,
-                "keyboard_type": "iso",
-                "standalone_keys_delay_milliseconds": 180
-            }
-        }
-    ]
 }
 ```
