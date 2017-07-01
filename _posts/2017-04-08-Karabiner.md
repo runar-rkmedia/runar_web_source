@@ -80,9 +80,7 @@ I have created a pull-request to get this configuration into the main server, so
 
 {% assign mod_json = site.url  | append: "/media/modifiers_to_f-keys.json" %}
 
-<!-- <a href="karabiner://karabiner/assets/complex_modifications/import?url={{ mod_json | escape  }}">import-file for Karabiner-Elements</a> -->
-
-(Link will be available soon.)
+<a href="karabiner://karabiner/assets/complex_modifications/import?url={{ mod_json | escape  }}">import-file for Karabiner-Elements</a>
 
 ## Extra ctrl and option keys
 

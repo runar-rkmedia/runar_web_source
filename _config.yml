@@ -19,8 +19,8 @@ facebook: https://www.facebook.com/runartrollet
 description: > # this means to ignore newlines until "baseurl:"
   A work-in-progress portfolio for Runar Kristoffersen, electrician by trade, computer- and sciencegeek by desire.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://www.runarkristoffersen.com" # the base hostname & protocol for your site, e.g. http://example.com
-url_site: "http://www.runarkristoffersen.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.runarkristoffersen.com" # the base hostname & protocol for your site, e.g. http://example.com
+url_site: "https://www.runarkristoffersen.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: runartrollet
 github_username:  runartrollet
 google_analytics: 'UA-97043586-1'
