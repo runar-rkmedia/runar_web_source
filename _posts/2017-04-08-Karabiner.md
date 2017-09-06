@@ -78,7 +78,7 @@ The target-keys you need here should be unused keys. My keyboard does not have F
 
 I have created a pull-request to get this configuration into the main server, so you can add them from there. In the meantime, you can import it directly from my site. Just follow link below and allow it to import into Karabiner.
 
-{% assign mod_json = site.url  | append: "/media/modifiers_to_f-keys.json" %}
+{% assign mod_json = site.url_site  | append: "/media/modifiers_to_f-keys.json" %}
 
 <a href="karabiner://karabiner/assets/complex_modifications/import?url={{ mod_json | escape  }}">import-file for Karabiner-Elements</a>
 
