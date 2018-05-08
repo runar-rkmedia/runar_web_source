@@ -1,0 +1,16 @@
+{% capture srcset %}
+    {% for i in site.resized %}
+        https://res.cloudinary.com/{{include.site}}/image/upload/c_scale,f_auto,q_auto,w_{{i}}/{{include.public_id}} {{ i }}w,
+    {% endfor %}
+{% endcapture %}
+
+{% assign default_size = 800 %}
+{% assign largest = site.resized | sort | last %}
+{% if include.sizes%}
+  {% assign sizes=include.sizes%}
+{% else %}
+  {% assign sizes="(min-width: 800px) 80vw, 100vw" %}
+{% endif %}
+{% unless include.a=="None" %}<a href="https://res.cloudinary.com/{{include.site}}/image/upload/{{include.public_id}}">{% endunless %}
+  <img src="https://res.cloudinary.com/{{include.site}}/image/upload/c_scale,f_auto,q_auto,w_{{default_size}}/{{include.public_id}}" alt="{{ include.alt }}" class="{{ include.class }}" srcset="{{ srcset | strip_newlines }}" sizes="{{ sizes }}">
+{% unless include.a=="None" %}</a>{% endunless %}

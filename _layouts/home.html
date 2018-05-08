@@ -29,6 +29,11 @@ layout: default
           <div class="center front-image">
             {% include image.html alt=post.image_description image=post.image  sizes="(min-width: 800px) 40vw, 70vw" a='None'%}</div>
         {% endif %}
+        {% if post.image_url %}
+          <div class="center front-image">
+            <img src="{{post.image_url}}" alt="{{psot.image_description}}">
+          </div>
+        {% endif %}
         <p>{{ post.excerpt | markdownify }}</p>
       </li>
       <li class="center">
